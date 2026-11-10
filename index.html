@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Outfit Studio 男生穿搭靈感資料庫，探索季節、風格與日常搭配。">
+<title>Outfit Studio｜男生穿搭靈感資料庫</title><link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home">OUTFIT<span>STUDIO.</span></a>
+  <nav><a href="#home">首頁</a><a href="#discover">探索穿搭</a><a href="#styles">穿搭風格</a><a href="#about">關於我們</a></nav>
+  <a class="header-cta" href="#discover">開始探索 ↗</a>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">A PERSONAL MENSWEAR JOURNAL</p>
+    <h1>穿出自己的<br><em>風格。</em></h1>
+    <p class="hero-desc">從日常基本款到不同季節的搭配靈感，找到適合自己的穿衣方式。簡單搭配，也能展現個人品味。</p>
+    <a class="dark-button" href="#discover">探索穿搭 <span>↗</span></a>
+    <div class="hero-note"><span class="note-line"></span> STYLE IS IN THE DETAILS.</div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1100&q=85" alt="男生簡約日常穿搭">
+    <div class="image-label"><span>01 / EDITOR'S PICK</span><strong>Everyday Essentials</strong></div>
+  </div>
+</section>
+
+<section class="intro-strip"><span>FIND YOUR STYLE</span><p>不追逐每一種流行，找到真正適合自己的搭配。</p><span>EST. 2026</span></section>
+
+<section class="section" id="discover">
+  <div class="section-head"><div><p class="eyebrow">THE LOOKBOOK</p><h2>穿搭靈感</h2></div><p>依照季節與風格，找到下一套穿搭。</p></div>
+  <div class="filters" role="group" aria-label="穿搭篩選">
+    <button class="filter active" data-filter="all">全部</button>
+    <button class="filter" data-filter="spring">春夏</button>
+    <button class="filter" data-filter="autumn">秋冬</button>
+    <button class="filter" data-filter="minimal">簡約</button>
+    <button class="filter" data-filter="smart">斯文</button>
+    <button class="filter" data-filter="casual">休閒</button>
+  </div>
+  <div class="look-grid" id="lookGrid"></div>
+</section>
+
+<section class="feature" id="styles">
+  <div class="feature-photo"><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1100&q=85" alt="簡約男裝風格"></div>
+  <div class="feature-copy"><p class="eyebrow">STYLE GUIDE</p><h2>找到適合你的<br><em>穿搭風格。</em></h2><p>穿搭沒有唯一標準。從色彩、版型到單品選擇，慢慢建立自己的搭配習慣。</p>
+    <div class="style-list"><div><span>01</span><strong>Minimal</strong><small>簡約俐落</small></div><div><span>02</span><strong>Smart Casual</strong><small>斯文休閒</small></div><div><span>03</span><strong>Japanese</strong><small>日系自然</small></div><div><span>04</span><strong>Street</strong><small>街頭層次</small></div></div>
+  </div>
+</section>
+
+<section class="section tips-section">
+  <div class="section-head"><div><p class="eyebrow">QUICK NOTES</p><h2>搭配小筆記</h2></div><p>從簡單的原則開始，讓整體造型更協調。</p></div>
+  <div class="tips-grid"><article><span>01 / COLOR</span><h3>控制整體配色</h3><p>一套穿搭可以先選一個主色，再用黑、白、灰或大地色做搭配，讓視覺更一致。</p></article><article><span>02 / FIT</span><h3>留意衣服版型</h3><p>除了尺寸，也要注意肩線、衣長與褲管寬度，讓上下身比例看起來更自然。</p></article><article><span>03 / DETAIL</span><h3>用細節增加層次</h3><p>鞋子、襪子、皮帶或包款都能影響整體感覺，選擇適合風格的單品即可。</p></article></div>
+</section>
+
+<section class="about" id="about"><p class="eyebrow">ABOUT OUTFIT STUDIO</p><h2>Good style starts<br>with <em>simple choices.</em></h2><p>Outfit Studio 是一個男生穿搭靈感資料庫，透過一致的分類與內容格式，整理不同季節、風格與單品的搭配方式。讓穿搭靈感可以持續累積，也更容易找到。</p></section>
+</main>
+<footer><a class="logo" href="#home">OUTFIT<span>STUDIO.</span></a><span>MEN'S STYLE & OUTFIT JOURNAL · 2026</span><a href="#home">BACK TO TOP ↑</a></footer>
+<div class="modal" id="outfitModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><article class="modal-card"><button class="modal-close" data-close aria-label="關閉">×</button><img id="modalImage" src="" alt=""><div class="modal-body"><p class="eyebrow" id="modalMeta"></p><h2 id="modalTitle"></h2><p id="modalDesc"></p><div class="modal-items" id="modalItems"></div><p class="modal-tip" id="modalTip"></p></div></article></div>
+<script src="assets/app.js"></script>
+</body></html>
